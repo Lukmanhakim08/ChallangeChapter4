@@ -1,49 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/text_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:textSize="40dp"
+        android:text="INPUT DATA"
+        android:textSize="20dp"
         android:textStyle="bold"
+        android:layout_gravity="center"
         android:textColor="@color/black"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_below="@+id/text_login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/logo_splash"/>
-
     <EditText
-        android:id="@+id/edt_email"
+        android:id="@+id/edt_inputnama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="10dp"
-        android:hint="Masukkan Email"
+        android:hint="Masukkan Nama"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:background="@drawable/custom"/>
 
 
     <EditText
-        android:id="@+id/edt_password"
+        android:id="@+id/edt_inputalamat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_email"
@@ -51,32 +39,34 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="10dp"
-        android:hint="Masukkan Password"
+        android:hint="Masukkan Alamat"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:background="@drawable/custom" />
 
-    <Button
-        android:id="@+id/btn_login"
+    <EditText
+        android:id="@+id/edt_inputumur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_password"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="100dp"
         android:layout_marginRight="20dp"
-        android:text="LOGIN"
+        android:padding="10dp"
+        android:hint="Masukkan Umur"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/custom" />
+
+
+    <Button
+        android:id="@+id/btn_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="INPUT"
         android:textSize="20dp"/>
 
-    <TextView
-        android:gravity="center_horizontal"
-        android:id="@+id/regiter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Belom Punya Akun"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="#FBB804"
-        android:layout_below="@+id/btn_login"
-        android:textSize="15sp" />
 
-</RelativeLayout>
+</LinearLayout>
