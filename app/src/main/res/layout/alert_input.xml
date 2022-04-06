@@ -24,7 +24,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="10dp"
-        android:hint="Masukkan Nama"
+        android:hint="Masukkan Nama Sekolah"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:background="@drawable/custom"/>
@@ -45,7 +45,7 @@
         android:background="@drawable/custom" />
 
     <EditText
-        android:id="@+id/edt_inputumur"
+        android:id="@+id/edt_inputtahun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_email"
@@ -53,7 +53,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="10dp"
-        android:hint="Masukkan Umur"
+        android:hint="Masukkan Tahun Berdiri"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:background="@drawable/custom" />

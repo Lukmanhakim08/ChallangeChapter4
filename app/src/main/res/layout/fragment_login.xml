@@ -28,25 +28,25 @@
         android:src="@drawable/logo_splash"/>
 
     <EditText
-        android:id="@+id/edt_email"
+        android:id="@+id/edt_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
-        android:layout_marginTop="56dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="56dp"
         android:layout_marginRight="20dp"
+        android:background="@drawable/custom"
+        android:hint="Masukkan Username"
         android:padding="10dp"
-        android:hint="Masukkan Email"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        android:background="@drawable/custom"/>
+        android:textSize="20dp" />
 
 
     <EditText
         android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_email"
+        android:layout_below="@+id/edt_username"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -68,15 +68,15 @@
         android:textSize="20dp"/>
 
     <TextView
-        android:gravity="center_horizontal"
         android:id="@+id/regiter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Belom Punya Akun"
+        android:layout_below="@+id/btn_login"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="Belom Punya Akun"
         android:textColor="#FBB804"
-        android:layout_below="@+id/btn_login"
         android:textSize="15sp" />
 
 </RelativeLayout>

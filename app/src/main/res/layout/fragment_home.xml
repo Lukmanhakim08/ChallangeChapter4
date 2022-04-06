@@ -7,37 +7,31 @@
     tools:context=".HomeFragment"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/ly_profile"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp"
-        tools:ignore="MissingConstraints">
+        android:text="Welcome Username"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/text_username"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:text="Welcome Username"
-            android:textSize="20dp"
-            android:textColor="@color/black"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Logout"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:layout_marginEnd="10dp"/>
-
-    </LinearLayout>
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/text_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_logbook"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/ly_profile"/>
+        android:layout_below="@+id/text_username"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_add"

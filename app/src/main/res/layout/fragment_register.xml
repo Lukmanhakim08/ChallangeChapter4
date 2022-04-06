@@ -29,12 +29,26 @@
         android:src="@drawable/logo_splash" />
 
     <EditText
-        android:id="@+id/edt_username"
+        android:id="@+id/edt_nomor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom"
+        android:hint="Masukkan Nomor"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_nomor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/custom"
         android:hint="Masukkan Username"
@@ -58,30 +72,30 @@
 
 
     <EditText
-        android:id="@+id/edt_konfirmasi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_email"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:padding="10dp"
-        android:hint="Masukkan KOnfirmasi Password"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:background="@drawable/custom" />
-
-
-    <EditText
         android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_konfirmasi"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom"
+        android:hint="Masukkan Password Password"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/edt_konfirmasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="10dp"
-        android:hint="Masukkan Password"
+        android:hint="Masukkan Konfirmasi Password"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:background="@drawable/custom" />
@@ -95,6 +109,5 @@
         android:layout_marginTop="100dp"
         android:layout_below="@+id/edt_password"
         android:text="REGISTER"/>
-
 
 </RelativeLayout>
